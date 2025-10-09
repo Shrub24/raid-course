@@ -1,0 +1,4 @@
+[submodule "content"]
+	path = content
+	url = git@github.com:casting-dot-systems/raid-cast.git
+	branch = ai-course
