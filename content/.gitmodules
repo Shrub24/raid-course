@@ -1,6 +1,3 @@
 [submodule "Files/Templates/Castplate"]
 	path = Files/Templates/Castplate
 	url = https://github.com/casting-dot-systems/Castplates.git
-[submodule ".obsidian"]
-	path = .obsidian
-	url = https://github.com/casting-dot-systems/.obsidian.git
