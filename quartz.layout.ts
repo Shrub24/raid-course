@@ -27,7 +27,7 @@ export const defaultContentPageLayout: PageLayout = {
   ],
   left: [
     Component.LogoTitle({
-      logoPath: "static/logo.png",
+      logoPath: "logo.png",
       logoAlt: "RAID Logo",
       showTitle: true,
     }),
@@ -56,7 +56,7 @@ export const defaultListPageLayout: PageLayout = {
   beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
   left: [
     Component.LogoTitle({
-      logoPath: "static/logo.png",
+      logoPath: "logo.png",
       logoAlt: "RAID Logo",
       showTitle: true,
     }),
