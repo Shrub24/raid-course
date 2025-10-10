@@ -53,14 +53,20 @@ LiteLLM will automatically detect these [environment variables](https://docs.pyt
 
 **Note:** Your Codespace already has Ollama pre-installed with a local model, so you can use that for free development and testing without any API keys!
 
-#### If Using Local Environment
+#### If Using Local Dev Containers or Manual Setup
 
-**→ See the complete guide:** [[Setting up API Keys for Local Environment]]
+If you're running the environment locally (via Dev Containers or manual setup), you can store API keys in a `.env` file:
 
-**Quick summary:** Copy `.env.template` to `.env` and add your API keys there:
 ```bash
 cp .env.template .env
 # Then edit .env with your API keys
+```
+
+The `.env` file should contain your API keys like this:
+```
+GEMINI_API_KEY=your_key_here
+OPENAI_API_KEY=your_key_here  # optional
+ANTHROPIC_API_KEY=your_key_here  # optional
 ```
 
 ---

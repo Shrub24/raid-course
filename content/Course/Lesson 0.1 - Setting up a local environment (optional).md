@@ -1,14 +1,11 @@
 ---
 publish: "true"
 ---
-Prefer to run everything on your own machine? This guide walks you through setting up the course environment locally. You have two options:
-
-1. **Dev Container (Recommended)** - Use our pre-configured Docker container
-2. **Manual Setup (Advanced)** - Set everything up yourself from scratch
+Prefer to run everything on your own machine? This guide walks you through setting up the course environment locally using our pre-configured Dev Container.
 
 ---
 
-## Option 1: Using the Pre-configured Dev Container ⭐
+## Using the Pre-configured Dev Container ⭐
 
 This is the best way to get the same experience as Codespaces, but running locally.
 
@@ -16,7 +13,7 @@ This is the best way to get the same experience as Codespaces, but running local
 
 You'll need:
 - **Docker Desktop** [(Windows/Mac)](https://www.docker.com/products/docker-desktop/) or **Docker Engine** [(Linux)](https://docs.docker.com/engine/install/)
-- **Visual Studio Code** with the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+- **Visual Studio Code** with the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) installed
 - **Git** ([Download here](https://git-scm.com/downloads))
 
 ### Setup Steps
@@ -24,10 +21,9 @@ You'll need:
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/Shrub24/raid-codespace.git
-   cd raid-codespace
    ```
 
-2. **Open in VS Code:**
+2. **Open the folder in VS Code:**
 
 3. **Reopen in Container:**
    - A popup should appear in the bottom right: "Reopen in Container"
@@ -90,6 +86,16 @@ Once your local environment is set up and verified, you're ready to start learni
 - 💡 **Virtual environment** - Always activate your venv before working
 - 💡 **Port conflicts** - If you have issues, check ports 8888 (Jupyter) and 11434 (Ollama) aren't in use
 - 💡 **Updates** - Pull the latest changes occasionally: `git pull origin main`
+
+---
+
+## Manual Setup (At Your Own Risk)
+
+If you prefer to set up the environment manually without Dev Containers, you can configure it yourself using the files in the [raid-codespace repository](https://github.com/Shrub24/raid-codespace):
+- **Requirements:** `requirements.txt`
+- **Ollama model:** `hf.co/unsloth/Phi-4-mini-instruct-GGUF`
+
+⚠️ **Note:** Manual setup is not officially supported or documented. We strongly recommend using the Dev Container setup above for a consistent experience.
 
 ---
 
