@@ -10,8 +10,7 @@ Your development environment comes pre-configured with:
 - ✅ **Python 3.12+** with all required libraries
 - ✅ **LiteLLM** for unified LLM API access
 - ✅ **Ollama** with a local model pre-installed (for free, offline development)
-- ✅ **Jupyter Notebooks** for interactive learning
-- ✅ **All course materials** (notebooks, exercises, examples)
+- ✅ **Course materials** (jupyter notebooks, exercises, examples)
 - ✅ **VS Code** integration for a familiar development experience
 
 ## Choose Your Setup Path
@@ -60,7 +59,7 @@ If you don't have one already:
 1. Go to [github.com](https://github.com)
 2. Click "Sign up" and create a free account
 
-**Student Tip:** If you're a student, get [GitHub Pro for free](https://education.github.com/pack) through GitHub Student Developer Pack - you'll get 180 hours/month of Codespaces instead of 60!
+**Student Tip:** If you're a student, get [GitHub Pro for free](https://education.github.com/pack) through GitHub Student Developer Pack - you'll get 90 hours/month worth of Codespaces instead of 60!
 
 ### Step 2: Launch Your Codespace
 
@@ -94,6 +93,7 @@ Once your Codespace opens:
 - 💡 **Stop when not in use** - Stop your Codespace when you're done to save hours (it auto-stops after 30 minutes of inactivity)
 - 💡 **Access from anywhere** - Resume your Codespace from any device at [github.com/codespaces](https://github.com/codespaces)
 - 💡 **Use VS Code locally** - You can also [connect to Codespaces from your local VS Code](https://docs.github.com/en/codespaces/developing-in-a-codespace/using-github-codespaces-in-visual-studio-code)
+- 💡 **Stay updated** - When new course materials are added, create a new Codespace from the button above to get the latest version. Your old Codespaces will remain accessible if you need to reference your previous work
 
 ---
 

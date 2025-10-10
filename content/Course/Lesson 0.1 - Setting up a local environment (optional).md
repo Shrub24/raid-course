@@ -28,9 +28,6 @@ You'll need:
    ```
 
 2. **Open in VS Code:**
-   ```bash
-   code .
-   ```
 
 3. **Reopen in Container:**
    - A popup should appear in the bottom right: "Reopen in Container"
@@ -69,106 +66,12 @@ Your container includes:
 - Restart VS Code after installing Docker
 - On Windows, ensure WSL 2 is set up if using Docker Desktop
 
----
-
-## Option 2: Manual Setup (Advanced)
-
-For experienced developers who want full control over their environment.
-
-### Prerequisites
-
-- Python 3.11 or higher
-- pip (Python package manager)
-- Git
-
-### Setup Steps
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Shrub24/raid-codespace.git
-   cd raid-codespace
-   ```
-
-2. **Create a virtual environment:**
-   ```bash
-   # On Linux/Mac:
-   python3 -m venv venv
-   source venv/bin/activate
-   
-   # On Windows:
-   python -m venv venv
-   venv\Scripts\activate
-   ```
-
-3. **Install Python dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Install Ollama (for local models):**
-   
-   **Linux:**
-   ```bash
-   curl -fsSL https://ollama.com/install.sh | sh
-   ```
-   
-   **Mac:**
-   ```bash
-   brew install ollama
-   ```
-   
-   **Windows:**
-   Download from [ollama.com](https://ollama.com/download)
-
-5. **Download a local model:**
-   ```bash
-   ollama pull qwen2.5:3b
-   ```
-
-6. **Start Ollama server:**
-   ```bash
-   ollama serve
-   ```
-   (Keep this running in a separate terminal)
-
-7. **Set up environment variables:**
-   
-   Create a `.env` file in the project root:
-   ```bash
-   OLLAMA_MODEL=qwen2.5:3b
-   GOOGLE_API_KEY=your_api_key_here  # Optional, for Google Gemini
-   ```
-
-8. **Launch Jupyter:**
-   ```bash
-   jupyter notebook
-   ```
-
-9. **Verify Setup:**
-   - Navigate to `Lesson 1/lesson1-litellm.ipynb`
-   - Run the first few cells - if they work, you're ready!
-
 ### Getting API Keys
 
 To use cloud models (like Google Gemini):
 
 - **Google Gemini:** Get a free API key at [aistudio.google.com](https://aistudio.google.com/app/apikey)
 - Add to your `.env` file: `GOOGLE_API_KEY=your_key_here`
-
-### Troubleshooting
-
-**Module not found errors:**
-- Ensure your virtual environment is activated
-- Run `pip install -r requirements.txt` again
-
-**Ollama connection errors:**
-- Check Ollama is running: `ollama list`
-- Try restarting: `ollama serve`
-- Ensure port 11434 is not blocked
-
-**Jupyter doesn't open:**
-- Try: `python -m jupyter notebook`
-- Or install globally: `pip install --user jupyter`
 
 ---
 
