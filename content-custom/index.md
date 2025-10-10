@@ -5,6 +5,8 @@ publish: true
 
 Welcome to the RAID AI Development course! This course will teach you how to build your own AI applications.
 
+## [Get started!](Course/Intro-to-AI-Development-Course.md)
+
 ## 📋 Prerequisites
 
 To get the most out of this course, you'll need:
