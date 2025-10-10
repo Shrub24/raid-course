@@ -3,13 +3,13 @@ title: Welcome to RAID Course
 publish: true
 ---
 
-# Welcome to Responsible AI Development
+Welcome to the RAID AI Development course! This course will teach you how to build your own AI applications.
 
-Welcome to the RAID AI Development course! This course will teach you how to build AI applications responsibly.
+## 📋 Prerequisites
 
-## 📚 Get Started
-
-Ready to begin? Start with our [Introduction to AI Development Course](Course/Intro-to-AI-Development-Course.md).
+To get the most out of this course, you'll need:
+- **Basic Python knowledge** - Understanding of variables, functions, and syntax
+- That's it! We'll teach you everything else
 
 ## 🎯 What You'll Learn
 
