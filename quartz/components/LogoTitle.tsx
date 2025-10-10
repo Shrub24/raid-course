@@ -1,4 +1,4 @@
-import { pathToRoot } from "../util/path"
+import { pathToRoot, joinSegments } from "../util/path"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
 import { i18n } from "../i18n"
@@ -10,7 +10,7 @@ interface Options {
 }
 
 const defaultOptions: Options = {
-  logoPath: "/static/logo.png",
+  logoPath: "logo.png",
   logoAlt: "Logo",
   showTitle: true,
 }
@@ -25,11 +25,12 @@ export default ((userOpts?: Partial<Options>) => {
   }: QuartzComponentProps) => {
     const title = cfg?.pageTitle ?? i18n(cfg.locale).propertyDefaults.title
     const baseDir = pathToRoot(fileData.slug!)
+    const logoPath = joinSegments(baseDir, "static", opts.logoPath)
 
     return (
       <h2 class={classNames(displayClass, "logo-title")}>
         <a href={baseDir}>
-          <img src={baseDir + opts.logoPath} alt={opts.logoAlt} class="logo-image" />
+          <img src={logoPath} alt={opts.logoAlt} class="logo-image" />
           {opts.showTitle && <span class="title-text">{title}</span>}
         </a>
       </h2>
